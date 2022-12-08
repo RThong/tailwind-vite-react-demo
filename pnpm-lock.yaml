@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@mdi/js': ^7.0.96
+  '@types/node': ^18.11.11
   '@types/react': ^17.0.33
   '@types/react-dom': ^17.0.10
   '@typescript-eslint/eslint-plugin': ^5.45.1
@@ -10,6 +12,7 @@ specifiers:
   eslint: ^8.29.0
   eslint-config-alloy: ^4.7.0
   eslint-plugin-react: ^7.31.11
+  eslint-plugin-react-hooks: ^4.6.0
   postcss: ^8.4.19
   prettier: ^2.8.0
   prettier-plugin-tailwindcss: ^0.2.0
@@ -20,10 +23,12 @@ specifiers:
   vite: ^3.2.5
 
 dependencies:
+  '@mdi/js': registry.npmmirror.com/@mdi/js/7.0.96
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
 
 devDependencies:
+  '@types/node': registry.npmmirror.com/@types/node/18.11.11
   '@types/react': registry.npmmirror.com/@types/react/17.0.52
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.18
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.45.1_98d9e64b8d9d8eb7bb2dfa93089e8cff
@@ -33,12 +38,13 @@ devDependencies:
   eslint: registry.npmmirror.com/eslint/8.29.0
   eslint-config-alloy: registry.npmmirror.com/eslint-config-alloy/4.7.0_dc2cde3058510b202c2a803dd082d55b
   eslint-plugin-react: registry.npmmirror.com/eslint-plugin-react/7.31.11_eslint@8.29.0
+  eslint-plugin-react-hooks: registry.npmmirror.com/eslint-plugin-react-hooks/4.6.0_eslint@8.29.0
   postcss: registry.npmmirror.com/postcss/8.4.19
   prettier: registry.npmmirror.com/prettier/2.8.0
   prettier-plugin-tailwindcss: registry.npmmirror.com/prettier-plugin-tailwindcss/0.2.0_prettier@2.8.0
   tailwindcss: registry.npmmirror.com/tailwindcss/3.2.4
   typescript: registry.npmmirror.com/typescript/4.9.3
-  vite: registry.npmmirror.com/vite/3.2.5
+  vite: registry.npmmirror.com/vite/3.2.5_@types+node@18.11.11
 
 packages:
 
@@ -490,6 +496,12 @@ packages:
       '@jridgewell/sourcemap-codec': registry.npmmirror.com/@jridgewell/sourcemap-codec/1.4.14
     dev: true
 
+  registry.npmmirror.com/@mdi/js/7.0.96:
+    resolution: {integrity: sha512-lNqhkV3cpPfYb/Avh+vXLFukUTbHbyHoFo4Jdc7Oc9UvURGVhamFIpgOVvEf2bNA78zvjXTZeVWExUTR+DLBfQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mdi/js/-/js-7.0.96.tgz}
+    name: '@mdi/js'
+    version: 7.0.96
+    dev: false
+
   registry.npmmirror.com/@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz}
     name: '@nodelib/fs.scandir'
@@ -521,6 +533,12 @@ packages:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.11.tgz}
     name: '@types/json-schema'
     version: 7.0.11
+    dev: true
+
+  registry.npmmirror.com/@types/node/18.11.11:
+    resolution: {integrity: sha512-KJ021B1nlQUBLopzZmPBVuGU9un7WJd/W4ya7Ih02B4Uwky5Nja0yGYav2EfYIk0RR2Q9oVhf60S2XR1BCWJ2g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-18.11.11.tgz}
+    name: '@types/node'
+    version: 18.11.11
     dev: true
 
   registry.npmmirror.com/@types/prop-types/15.7.5:
@@ -725,7 +743,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': registry.npmmirror.com/@babel/plugin-transform-react-jsx-source/7.19.6_@babel+core@7.20.5
       magic-string: registry.npmmirror.com/magic-string/0.26.7
       react-refresh: registry.npmmirror.com/react-refresh/0.14.0
-      vite: registry.npmmirror.com/vite/3.2.5
+      vite: registry.npmmirror.com/vite/3.2.5_@types+node@18.11.11
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1527,6 +1545,18 @@ packages:
       eslint: registry.npmmirror.com/eslint/8.29.0
       eslint-plugin-react: registry.npmmirror.com/eslint-plugin-react/7.31.11_eslint@8.29.0
       typescript: registry.npmmirror.com/typescript/4.9.3
+    dev: true
+
+  registry.npmmirror.com/eslint-plugin-react-hooks/4.6.0_eslint@8.29.0:
+    resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz}
+    id: registry.npmmirror.com/eslint-plugin-react-hooks/4.6.0
+    name: eslint-plugin-react-hooks
+    version: 4.6.0
+    engines: {node: '>=10'}
+    peerDependencies:
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
+    dependencies:
+      eslint: registry.npmmirror.com/eslint/8.29.0
     dev: true
 
   registry.npmmirror.com/eslint-plugin-react/7.31.11_eslint@8.29.0:
@@ -3129,8 +3159,9 @@ packages:
     version: 1.0.2
     dev: true
 
-  registry.npmmirror.com/vite/3.2.5:
+  registry.npmmirror.com/vite/3.2.5_@types+node@18.11.11:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-3.2.5.tgz}
+    id: registry.npmmirror.com/vite/3.2.5
     name: vite
     version: 3.2.5
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -3156,6 +3187,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': registry.npmmirror.com/@types/node/18.11.11
       esbuild: registry.npmmirror.com/esbuild/0.15.18
       postcss: registry.npmmirror.com/postcss/8.4.19
       resolve: registry.npmmirror.com/resolve/1.22.1
