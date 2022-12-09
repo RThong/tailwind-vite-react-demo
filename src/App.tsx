@@ -4,6 +4,7 @@ import BasicLayout from './layouts/BasicLayout'
 export const ThemeContext = createContext<{
   theme: 'dark' | 'normal'
   changeTheme: React.Dispatch<React.SetStateAction<'dark' | 'normal'>>
+  // @ts-ignore
 }>(null)
 
 const App = () => {

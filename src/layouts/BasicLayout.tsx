@@ -8,7 +8,7 @@ const BasicLayout = ({ children, className }: { children: ReactNode; className: 
     <div
       className={`${className} min-h-screen w-screen  bg-gray-50 pt-14 pl-60 dark:bg-slate-800 dark:text-slate-100`}
     >
-      <NavBar>123</NavBar>
+      <NavBar />
       <AsideMenu>123</AsideMenu>
       {children}
       <FooterBar>123</FooterBar>
