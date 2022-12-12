@@ -11,7 +11,8 @@ import {
   mdiCrop,
   mdiAccount,
   mdiCogOutline,
-  mdiEmail
+  mdiEmail,
+  mdiChevronDown
 } from '@mdi/js'
 import { ThemeContext } from '@/App'
 import Menu from '@/components/Menu'
@@ -26,8 +27,10 @@ const NavBar = () => {
   const [userActive, setUserActive] = useState(false)
 
   return (
-    <nav className="transition-position fixed inset-x-0 top-0  z-30 flex h-14 w-screen items-center bg-gray-50 pl-60 dark:bg-slate-800 dark:text-white">
-      <div className="mx-auto flex max-w-6xl items-center">
+    <nav className="  fixed inset-x-0 top-0  flex h-14 w-screen items-center bg-gray-50 pl-60 dark:bg-slate-800 dark:text-white">
+      <div className="mx-auto flex max-w-6xl flex-1 items-center">
+        <div className=" flex-1 text-slate-400">Search</div>
+
         <div className="relative cursor-pointer  py-2 px-3 ">
           <div
             className="flex items-center hover:text-blue-500  dark:hover:text-slate-400 "
@@ -37,7 +40,10 @@ const NavBar = () => {
 
             <span className="px-2">Sample Menu</span>
 
-            <BaseIcon path={mdiChevronUp} className="hidden transition-colors lg:inline-flex" />
+            <BaseIcon
+              path={menuActive ? mdiChevronDown : mdiChevronUp}
+              className="hidden transition-colors lg:inline-flex"
+            />
           </div>
 
           <Menu
@@ -74,7 +80,10 @@ const NavBar = () => {
 
             <span className="px-2">Sample Menu</span>
 
-            <BaseIcon path={mdiChevronUp} className="hidden transition-colors lg:inline-flex" />
+            <BaseIcon
+              path={userActive ? mdiChevronDown : mdiChevronUp}
+              className="hidden transition-colors lg:inline-flex"
+            />
           </div>
 
           <Menu
