@@ -1,4 +1,5 @@
 import React, { createContext, useMemo, useState } from 'react'
+import Button from './components/Button'
 import BasicLayout from './layouts/BasicLayout'
 
 export const ThemeContext = createContext<{
@@ -20,7 +21,11 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={value}>
-      <BasicLayout className={theme === 'dark' ? 'dark' : ''}>123</BasicLayout>
+      <BasicLayout className={theme === 'dark' ? 'dark' : ''}>
+        <Button />
+        <Button className=" bg-gray-800" />
+        <Button className=" bg-red-300" />
+      </BasicLayout>
     </ThemeContext.Provider>
   )
 }

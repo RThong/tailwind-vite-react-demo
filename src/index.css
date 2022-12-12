@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* .side_menu_item {
+    @apply relative flex h-12 cursor-pointer items-center px-4 text-gray-300 hover:text-white;
+  } */
+
+  /* .btn {
+    @apply inline-flex cursor-pointer items-center justify-center rounded-full bg-blue-500 px-3 py-1 text-sm text-white;
+  } */
+}
