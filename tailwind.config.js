@@ -9,6 +9,8 @@ module.exports = {
     extend: {}
   },
   plugins: [
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/forms'),
     plugin(function ({ addBase, addComponents, addUtilities, theme, addVariant }) {
       console.log('【theme】', theme('fontSize.sm'))
 
