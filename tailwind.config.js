@@ -1,5 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['index.html', './src/**/*.{js,jsx,ts,tsx,vue,html}'],
   darkMode: 'class', // or 'media' or 'class'
@@ -8,6 +9,7 @@ module.exports = {
     abc: '#fff',
     extend: {}
   },
+  // corePlugins: [],
   plugins: [
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/forms'),
@@ -22,7 +24,8 @@ module.exports = {
           alignItems: 'center',
           paddingLeft: theme('spacing.4'),
           paddingRight: theme('spacing.4'),
-          color: theme('colors.gray.300')
+          color: theme('colors.gray.300'),
+          cursor: 'pointer'
         },
         '.side_menu_item:hover': {
           color: theme('abc')

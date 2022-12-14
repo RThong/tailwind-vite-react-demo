@@ -17,7 +17,7 @@ import {
 import { ThemeContext } from '@/App'
 import Menu from '@/components/Menu'
 
-const avatarImage = `https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93`
+const avatarImage = `https://avatars.dicebear.com/api/avataaars/example.svg?options[top][=shortHairoptions[accessoriesChance]=93`
 
 const NavBar = () => {
   const { changeTheme, theme } = useContext(ThemeContext)
@@ -41,7 +41,7 @@ const NavBar = () => {
             <span className="px-2">Sample Menu</span>
 
             <BaseIcon
-              path={menuActive ? mdiChevronDown : mdiChevronUp}
+              path={menuActive ? mdiChevronUp : mdiChevronDown}
               className="hidden transition-colors lg:inline-flex"
             />
           </div>
@@ -81,7 +81,7 @@ const NavBar = () => {
             <span className="px-2">Sample Menu</span>
 
             <BaseIcon
-              path={userActive ? mdiChevronDown : mdiChevronUp}
+              path={userActive ? mdiChevronUp : mdiChevronDown}
               className="hidden transition-colors lg:inline-flex"
             />
           </div>
